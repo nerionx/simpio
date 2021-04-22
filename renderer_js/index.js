@@ -94,6 +94,7 @@ function createStationHolder(){
 function favicon(path){
     let favicon = document.createElement("img");
     favicon.setAttribute("class","favicon");
+    favicon.setAttribute("onerror","this.onerror=null; this.src='./img/station-default-icon.svg'")
     favicon.src = path;
     return favicon;
 }
