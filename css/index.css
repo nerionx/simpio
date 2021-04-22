@@ -1,0 +1,24 @@
+#header{
+    text-align: center;
+    font-size: 1em;
+    position: fixed;
+    width:100%;
+    z-index:200;
+}
+
+#station-list{
+    position: relative;
+    padding-top:60px;
+}
+
+#playercontainer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index:200;
+}
+
+.favicon{
+    width: 60px;
+    height: 60px;
+}

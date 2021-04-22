@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link href="./css/w3.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./renderer_js/index.js"></script>
+    <script src="./librarys/soundmanagerv297a-20170601/script/soundmanager2.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simpio</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body>
+    <div class = "w3-container w3-black" id="header">
+        <div id="title">
+            Simpio - Streaming Radio Player
+        </div>
+        <div id="searchbox">
+            <input type="text" id="searchtext" placeholder="Find Station">
+            <select name="searchtype" id="stype">
+                <option value="byname">Name</option>
+                <option value="bynameexact">Exact Name</option>
+                <option value="bylanguage">Language</option>
+                <option value="bytag">Tag</option>
+                <option value="bycountrycodeexact">Country Code</option>
+            </select>   
+            <input type="button" value="Search" onclick="searchStation()">
+        </div>
+    </div>
+    <div class="w3-container" id="station-list"></div>
+    <div class="w3-container w3-black" id = "playercontainer">
+        <span id="lblStationName"></span>
+        <audio controls id="player"></audio>
+    </div>
+</body>
+
+</html>
